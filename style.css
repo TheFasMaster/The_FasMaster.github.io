@@ -1,0 +1,167 @@
+body {
+  font-family: 'Roboto', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+header {
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+header img {
+  width: 150px;
+  margin-bottom: 10px;
+}
+nav {
+  background-color: #0055a5;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a strong {
+  font-size: 22px;
+  color: #ffcc00;
+}
+.main-content {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 10px auto;
+  padding: 0 10px;
+}
+section {
+  padding: 20px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.services ul {
+  list-style: none;
+  padding-left: 0;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+.services ul li {
+  margin: 10px 0;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 10px;
+}
+.gallery img {
+  width: 100%;
+  border-radius: 8px;
+  transition: transform 0.3s;
+}
+.gallery img:hover {
+  transform: scale(1.05);
+}
+.gallery img:nth-child(n+13) {
+  border: 4px solid green;
+}
+.pricing table {
+  width: 100%;
+  border-collapse: collapse;
+}
+.pricing th, .pricing td {
+  border: 1px solid #ccc;
+  padding: 10px;
+  text-align: left;
+}
+.pricing th {
+  background-color: #0055a5;
+  color: white;
+}
+.contact img {
+  width: 40px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.contact p {
+  font-size: 18px;
+}
+.contact strong {
+  color: #003366;
+  font-size: 20px;
+}
+footer {
+  background-color: #003366;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+}
+form input, form select, form button {
+  width: 100%;
+  padding: 10px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+form input:focus, form select:focus {
+  border-color: #0055a5;
+  outline: none;
+}
+form button {
+  background-color: #0055a5;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+form button:hover {
+  background-color: #003366;
+}
+#estimate-result {
+  margin-top: 10px;
+  font-weight: bold;
+  color: #003366;
+}
+
+/* Мобильные стили */
+@media (max-width: 768px) {
+  .main-content {
+    grid-template-columns: 1fr;
+    padding: 0 5px;
+  }
+  header img {
+    width: 100px;
+  }
+  .pricing table {
+    font-size: 14px;
+  }
+  .contact p {
+    font-size: 16px;
+  }
+  .gallery img {
+    width: 100%;
+    height: auto;
+  }
+  form input, form select, form button {
+    width: 100%;
+    font-size: 16px;
+  }
+}
+footer img {
+  width: 100%;
+  max-width: 400px;
+}
