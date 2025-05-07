@@ -1,0 +1,7 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://fasmaster.ru/sitemap.xml
+Host: fasmaster.ru
+
+Clean-param: utm_source&utm_medium&utm_campaign
