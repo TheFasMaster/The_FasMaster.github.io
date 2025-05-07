@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="ФасМастер – профессиональный ремонт и реставрация фасадов в Санкт-Петербурге. Качественно. Надёжно. Звоните!" />
+  <meta name="keywords" content="ремонт фасадов, фасады СПб, утепление стен, реставрация зданий, покраска фасадов" />
+  <title>ФасМастер - Ремонт фасадов</title>
+  <link rel="icon" href="img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="sitemap" type="application/xml" href="sitemap.xml" />
+  <style>
+    body {
+      font-family: 'Roboto', Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f4f4f4;
+      color: #333;
+    }
+    header {
+      background-color: #003366;
+      color: white;
+      padding: 20px;
+      text-align: center;
+    }
+    header img {
+      width: 150px;
+      margin-bottom: 10px;
+    }
+    nav {
+      background-color: #0055a5;
+      color: white;
+      padding: 10px;
+      text-align: center;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a strong {
+      font-size: 22px;
+      color: #ffcc00;
+    }
+    .main-content {
+      display: grid;
+      grid-template-columns: 3fr 2fr;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 10px auto;
+      padding: 0 10px;
+    }
+    section {
+      padding: 20px;
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .services ul {
+      list-style: none;
+      padding-left: 0;
+      text-align: center;
+      font-size: 18px;
+      font-weight: 500;
+    }
+    .services ul li {
+      margin: 10px 0;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 10px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 8px;
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    .gallery img:nth-child(n+13) {
+      border: 4px solid green;
+    }
+    .pricing table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .pricing th, .pricing td {
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: left;
+    }
+    .pricing th {
+      background-color: #0055a5;
+      color: white;
+    }
+    .contact img {
+      width: 40px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+    .contact p {
+      font-size: 18px;
+    }
+    .contact strong {
+      color: #003366;
+      font-size: 20px;
+    }
+    footer {
+      background-color: #003366;
+      color: white;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 18px;
+    }
+    form input, form select, form button {
+      width: 100%;
+      padding: 10px;
+      margin: 5px 0;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      box-sizing: border-box;
+      transition: border-color 0.3s;
+    }
+    form input:focus, form select:focus {
+      border-color: #0055a5;
+      outline: none;
+    }
+    form button {
+      background-color: #0055a5;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+    form button:hover {
+      background-color: #003366;
+    }
+    #estimate-result {
+      margin-top: 10px;
+      font-weight: bold;
+      color: #003366;
+    }
+
+    /* Мобильные стили */
+    @media (max-width: 768px) {
+      .main-content {
+        grid-template-columns: 1fr;
+        padding: 0 5px;
+      }
+      header img {
+        width: 100px;
+      }
+      .pricing table {
+        font-size: 14px;
+      }
+      .contact p {
+        font-size: 16px;
+      }
+      .gallery img {
+        width: 100%;
+        height: auto;
+      }
+      form input, form select, form button {
+        width: 100%;
+        font-size: 16px;
+      }
+    }
+
+    footer img {
+      width: 100%;
+      max-width: 400px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="img/price.png" alt="Логотип ФасМастер">
+    <h1>ФасМастер</h1>
+    <p>Профессиональный ремонт фасадов в Санкт-Петербурге</p>
+  </header>
+
+  <nav>
+    Звоните: <a href="tel:+79675388670"><strong>+7 (967) 538-86-70</strong></a>
+  </nav>
+
+  <div class="main-content">
+    <div class="left-column">
+      <section class="services">
+        <h2>Наши услуги</h2>
+        <ul>
+          <li>Ремонт фасадов жилых и коммерческих зданий</li>
+          <li>Покраска фасадов и декоративная отделка</li>
+          <li>Утепление наружных стен</li>
+          <li>Реставрация исторических фасадов</li>
+          <li>Мойка фасадов и удаление граффити</li>
+        </ul>
+        <h3>Фотогалерея</h3>
+        <div class="gallery">
+          <script>
+            for (let i = 0; i <= 15; i++) {
+              document.write(`<img src="img/${i}.jpg" alt="Пример фасада ${i}" loading="lazy">`);
+            }
+          </script>
+        </div>
+      </section>
+
+      <section class="pricing">
+        <h2>Расценки</h2>
+        <table>
+          <tr><th>Услуга</th><th>Цена (руб./м²)</th><th>Примечания</th></tr>
+          <tr><td>Ремонт фасадов</td><td>2000–3500</td><td>Штукатурка, утепление, армирование</td></tr>
+          <tr><td>Покраска фасадов</td><td>600–1200</td><td>Шуба, короед, акрил</td></tr>
+          <tr><td>Утепление стен (пенополистирол)</td><td>450–980</td><td>Пенопласт</td></tr>
+          <tr><td>Утепление стен (минеральная вата)</td><td>400–600</td><td>Минеральная вата</td></tr>
+          <tr><td>Утепление стен (пенополиуретан)</td><td>780–1134</td><td>Пенополиуретан (ППУ)</td></tr>
+          <tr><td>Реставрация фасадов</td><td>3500–6000</td><td>Исторические здания, элементы</td></tr>
+          <tr><td>Мойка фасадов</td><td>350–700</td><td>Граффити, химия, аппараты высокого давления</td></tr>
+        </table>
+        <p><small>Для точного расчета звоните: <strong>+7 (967) 538-86-70</strong></small></p>
+      </section>
+    </div>
+
+    <div class="right-column">
+      <section class="estimate">
+        <h2>Рассчитать смету</h2>
+        <form id="estimate-form" onsubmit="calculateEstimate(event)">
+          <select name="service" required>
+            <option value="">Выберите услугу</option>
+            <option value="repair">Ремонт фасадов</option>
+            <option value="painting">Покраска фасадов</option>
+            <option value="insulation_polystyrene">Утепление стен (пенополистирол)</option>
+            <option value="insulation_wool">Утепление стен (минеральная вата)</option>
+            <option value="insulation_foam">Утепление стен (пенополиуретан)</option>
+            <option value="restoration">Реставрация</option>
+            <option value="cleaning">Мойка фасадов</option>
+          </select>
+          <input type="number" name="area" placeholder="Площадь (м²)" required>
+          <button type="submit">Рассчитать</button>
+        </form>
+        <div id="estimate-result"></div>
+      </section>
+
+      <section class="form-section">
+        <h2>Оставьте заявку</h2>
+        <form action="https://formsubmit.co/the_fasmaster@mail.ru" method="POST">
+          <input type="text" name="name" placeholder="Ваше имя" required>
+          <input type="tel" name="phone" placeholder="Телефон" required>
+          <input type="hidden" name="_subject" value="Новая заявка с сайта ФасМастер">
+          <input type="hidden" name="_captcha" value="false">
+          <button type="submit">Отправить</button>
+        </form>
+      </section>
+
+      <section class="contact">
+        <h2>Контакты</h2>
+        <p><img src="img/tel.png" alt="Телефон"><strong>+7 (967) 538-86-70</strong></p>
+        <p><img src="img/Icons8.jpg" alt="Email"><strong><a href="mailto:the_fasmaster@mail.ru">the_fasmaster@mail.ru</a></strong></p>
+        <p><img src="img/price.png" alt="Прайс-лист">Прайс-лист по запросу</p>
+      </section>
+    </div>
+  </div>
+
+  <footer>
+    <img src="img/cartasmall.gif" alt="Карта" style="width: 100%; max-width: 600px;">
+    <p>© 2025 ФасМастер | <a href="tel:+79675388670">+7 (967) 538-86-70</a></p>
+  </footer>
+
+  <script>
+    function calculateEstimate(event) {
+      event.preventDefault();
+      const area = parseFloat(event.target.area.value);
+      const service = event.target.service.value;
+      const prices = {
+        repair: 2500,
+        painting: 800,
+        insulation_polystyrene: 700,
+        insulation_wool: 500,
+        insulation_foam: 957,
+        restoration: 4500,
+        cleaning: 500
+      };
+
+      if (isNaN(area) || !service) {
+        alert('Пожалуйста, выберите услугу и введите площадь');
+        return;
+      }
+
+      const cost = prices[service] * area;
+      document.getElementById('estimate-result').innerText = `Ориентировочная стоимость: ${cost.toLocaleString()} рублей`;
+    }
+  </script>
+</body>
+</html>
